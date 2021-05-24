@@ -52,7 +52,7 @@ const userQuestions = () => {
 
     {
       type: 'input',
-      message: 'What does the user need to know about contributinh to the repo?',
+      message: 'What does the user need to know about contributing to the repo?',
       name: 'contributeRepo',
     },
 
@@ -90,8 +90,8 @@ const readmeTemplate = (answers) =>
   ## Usage
     Dependencies: ${answers.dependencies}
     Run Test Using: ${answers.runTest}
-    Using Repo: ${answer.repoInfo}
-    Repo Contributions: ${answer.contributeRepo}
+    Using Repo: ${answers.repoInfo}
+    Repo Contributions: ${answers.contributeRepo}
 
   ## License
   ${answers.license}
@@ -101,7 +101,7 @@ const readmeTemplate = (answers) =>
   * GitHub: ${answers.githubAccount}
   * Linked-In: ${answers.linkedinAccount}
   * Email: ${answers.emailAddress}
-  })`;
+ `;
 
 // Bonus using writeFileAsync as a promise
 const init = () => {
